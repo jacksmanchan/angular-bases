@@ -13,6 +13,7 @@ export class MainPageComponent {
   constructor(private dbzService: DbzService) {}
 
   get characters(): Character[] {
+    // regresamos un nuevo objeto con lo recuperado del servicio
     return [...this.dbzService.characters];
   }
 

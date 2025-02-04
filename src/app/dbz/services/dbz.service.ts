@@ -23,6 +23,8 @@ export class DbzService {
   ];
 
   addCharacter(character: Character): void {
+    // ...character toma todas las propiedades de character y las agrega
+    // en el nuevo objeto newCharacter
     const newCharacter: Character = { id: uuid(), ...character}
     this.characters.push(newCharacter);
   }
